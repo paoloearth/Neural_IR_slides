@@ -1,0 +1,1000 @@
+ <!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+  
+    <!-- SEO -->
+    <title>Neural IR: Paolo Pulcini</title>
+    
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+
+
+
+    <!-- FAVICONS -->
+ 
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f89345">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+  
+
+
+      <!--Disclaimer -->
+    <main role="main">
+
+
+      <article id="webslides">
+
+        <!--Landing -->
+        <section class="bg-gradient-v">
+          <span class="background white" style="background-image:url('./static/images/home-background.jpg')"></span>
+          <div class="wrap size-60">
+            <p class="text-context">PAOLO PULCINI</p>
+            <h2> <strong>Neural IR</strong>: what it was, what it is & why we need it.</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <!--Disclaimer -->
+        <section>
+          <div class="wrap size-50 bg-white aligncenter">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>A bit of context</strong>
+            </h2>
+            <hr>
+            <p> <strong>IR</strong> is a big field.</p>
+            <p> <strong>Neural IR</strong> is a new interesting sub-field of it.</p>
+            <p> <strong>Books</strong> could be written on the topic but time and space are limited so ...</p>
+             <p> I hope you will enjoy  <strong class=" text-subtitle"> my selection</strong></p>
+             <figure class="size-40 aligncenter"><img src="./static/images/mysel.jfif" alt="Leonardo da Vinci"></figure> 
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+          <!--Leonardo -->
+        <section>
+          <div class="wrap">
+            <div class="card-20">
+             
+                <figure><img src="./static/images/goal.png" alt="Leonardo da Vinci"></figure> 
+               
+                <div class="wrap size-100">
+                <h3> Goals </h3>
+                <p>  Or things that you should know by the end of the presentation </p>
+                <hr>      
+
+
+              <!-- kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk -->  
+
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li>
+                <span>
+                  <svg class="fa-binoculars">
+                    <use xlink:href="#fa-binoculars"></use>
+                  </svg>
+                </span>
+                <h2>General Overview</h2>
+                <p>About the applications of NN to IR tasks</p>
+              </li>
+              <li>
+                <div class="process step-2"></div>
+                <span>
+                  <svg class="fa-flask">
+                    <use xlink:href="#fa-flask"></use>
+                  </svg>
+                </span>
+                <h2>Able to Experiment</h2>
+                <p>And implement a basic neural information systems </p>
+              </li>
+              
+              <li>
+                <div class="process step-4"></div>
+                <span>
+                  <svg class="fa-book">
+                    <use xlink:href="#fa-book"></use>
+                  </svg>
+                </span>
+                <h2>Know where to look</h2>
+                 <p>When developing your neural IR</p>
+              </li>
+            </ul>
+
+              
+             
+               </div>
+        
+              <!-- .end .wrap -->
+              </a>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+                <!--Leonardo -->
+        <section>
+          <div class="wrap">
+            <div class="card-100">
+             
+                <figure><img src="http://www.redcouchcreative.com/images/road-sketch.png" alt="Leonardo da Vinci"></figure> 
+               
+                <div class="wrap size-80">
+                <h3> Roadmap </h3>
+                <p>  Not to get lost </p>
+                <hr>        
+                <ol class="text-cols">
+                  <li><a target="_blank" href="#slide=5">  Neural IR</a></li>
+                  <li><a target="_blank" href="#slide=7"> Representations is everything</a></li>
+                  <li><a target="_blank" href="#slide=9"> Unsupervised Learning </a></li>
+                  <li><a target="_blank" href="#slide=10">   Query-document matching </a></li>
+                  <li><a target="_blank" href="#slide=11"> (Supervised) Learning </a></li>
+                  <li><a target="_blank" href="#slide=12"> NN Architectures & INPUTS</a></li>
+                  <li><a target="_blank" href="#slide=16"> Conclusions </a></li>
+                </ol>
+                    <br> 
+                   <p>  Bonus: <b>Live Demo</b></p>
+               </div>
+              
+            
+        
+          <!-- .end .wrap -->
+              </a>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+
+
+        <!--Sezione con lista (tipo obbiettivi) -->
+         <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50">
+            <h3> <strong>Neural IR </strong>: What / Why / How.</h3>
+            <hr>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2><strong>What </strong> is it?</h2>
+                  <p>Neural IR is the application of shallow or deep neural networks to IR tasks</p>
+                </li>
+                <li>
+                  <h2><strong>Why</strong> neural IR could be a good idea?</h2>
+                  <p>From 2010 the application of NN to CV, Speech recognition & others real-world application has led to several breakthroughs. 
+                    This relatively new scenario could benefit as well.</p>
+                </li>
+                <li>
+                  <h2><strong>How</strong> are NN being applied to IR tasks </h2>
+                  <p>The characteristics of the application plays the main role in definining the problem. Different architectures (and datasets) solve different problems. </p>
+                </li>
+              </ul>
+            </div> <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        
+        <section class="wrap">
+          <div class="card-20">
+             <figure>
+                 <img src="./static/images/influence.png">
+                 <figcaption > Took from "An Introduction to Neural Information Retrieval" 
+                 </figcaption>
+             </figure> 
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>Where</strong> are NN used?</h2>
+              <p class="text-intro"> Categorizations: </p>
+               <ol class="text-cols">
+                  <li> NN influences the <strong>representation</strong> of the <strong>query</strong> </li>
+                  <li> NN influences the  <strong>representation</strong> of the <strong>documents</strong> </li>
+                  <li> NN influences the <strong>maching/relevance estimation</strong></li>
+                  <li> NN influences any combination of the previously mentioned</li>
+                </ol>
+              <p class="text-symbols">* * *</p>
+              <!-- <p><strong>Recall</strong>: Document ranking typically involves a query and a document representation steps, followed by a matching stage.</p>-->
+            </div>
+
+            <!-- end .flex-content-->
+          </div>
+        </section>
+
+
+        <!--Quotes white  -->
+        <section>
+            <div class="wrap">
+            <h2><strong>Representation: </strong> be wise enough to choose the one that best suits your problem(I)</h2>
+            <hr>
+            <div class="grid mm">
+              <div class="column">
+                <h3>Terms as vectors</h3>
+                <p>Vector representations is by far the most common.<br>Two main categories:</p>
+                <ol  class="text-cols">
+                  <li>
+                    Local representation (aka one-hot)
+                  </li> 
+                  <li>
+                    Distributed representation
+                  </li> 
+                </ol>
+                <p> <br>Vectors allow for arithmetic operations</p>
+              </div>
+              <div class="column">
+                <h3>Similarity</h3>
+                <p>Different representations schemes defines distinct notions of similarity between the terms in the corresponding vector space. This lead to different levels of generalization. It is important to learn a term representation that is suitable for each specific task</p>
+              </div>
+             </div>
+             <hr>
+            <div class="grid mm">
+              <div class="column">
+                <h3> Local representations</h3>
+        
+                  <p><br></p>
+                  <div class="wrap size-70"> 
+                     <figure><img src="./static/images/one_hot.png" alt="Leonardo da Vinci"></figure> 
+                  </div>
+
+                 <ol  class="text-cols">
+                    <li>
+                      Each term is a unique entity
+                    </li> 
+                    <li>
+                      Terms outside of the fixed vocabulary have no representation
+                    </li> 
+                  </ol>
+              </div>
+
+              <div class="column">
+                <h3>Distributed representations</h3>
+                <p><br></p>
+                  <div class="wrap size-70"> 
+                     <figure><img src="./static/images/distributed.png" alt="Leonardo da Vinci"></figure> 
+                  </div>
+
+                 <ol  class="text-cols">
+                    <li>
+                      Each term is represented by a (spare or dense) vector of: hand-crafted features or a latent representation 
+                    </li> 
+                    <li>
+                      This feature extraction procedure should allow the definition of "similarity" based on such properties.
+                    </li> 
+                  </ol>
+
+            </div>
+            <!--end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+         <!--Quotes white  -->
+        <section>
+            <div class="wrap">
+            <h2><strong>Representation: </strong> be wise enough to choose the one that best suits your problem(II)</h2>
+            <hr>
+             <div class="grid mm">
+
+              <div class="column">
+                <h3><i>Distributional hypothesis</i></h3>
+                 <blockquote>
+                <p>"A word is characterized by the company it keeps "</p>
+                <p><cite>Firth (1957) </cite></p>
+              </blockquote>            
+             </div>
+             <div class="column">
+                <h3>Observed</h3>
+                <ul>
+                    <li>Representations that are measurable(explicitely) from the data. Categorized on the base of: </li>
+                    <ul>
+                      <li><b>Distributional features</b> : (<i>e.g.</i>, in documents, neighbouring terms with or without distances)</li>
+                      <li><b>Weighting schemes</b> applied over the raw counts(<i>e.g.</i> TF-IDF)</li>
+                       <li>Can capture interesting relationships but resultant representations are <b>highly sparse</b> and <b>high-dimensional</b></li> 
+                    </ul>
+                
+                  </ul> 
+             </div>
+
+             <div class="column">
+                <h3>Embeddings</h3>
+                <ul>
+                    <li><b>Simpler</b> representations that are <b>learnt from data</b> and assimilate   the <b>properties</b> of the terms and the inter-term <b>relationships</b> observable in the original feature space. </li>
+                    <li> <strong>NB: </strong> With both representation is possible to use <code>cosine similarity</code> as metric.
+                </ul>  
+             </div>
+
+              </div>
+
+             <hr>
+             <p class="text-subtitle" align="center">The <i>quick brown</i> <strong>fox</strong> <i>jumps over</i> the lazy dog </p>
+     
+            <div class="grid mm"> 
+              <div class="column">
+                   <h5 align="center"> In-document features</h5>
+                   <figure align="center"><img src="./static/images/00.png" ></figure> 
+                    <p><br></p>
+                    <h5 align="center"> Character-trigraph features </h5>
+                   <figure align="center"><img src="./static/images/03.png" ></figure> 
+              </div>
+              <div class="column">
+                    <h5 align="center"> Neighbouring-term features</h5>
+                   <figure align="center"><img src="./static/images/01.png" ></figure> 
+                    <p><br></p>
+                    <h5 align="center"> Neighbouring-term with distance features </h5>
+                   <figure align="center"><img src="./static/images/02.png" ></figure> 
+            </div>
+            <!--end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+       <section class="slide-top">
+
+          <div class="wrap ">
+            
+              <div class="grid sm content-left"> 
+                <div class="column bg-gradient-v ">
+                    <h2>Think <strong>sparse</strong>, but act <strong>dense</strong></h2>
+                </div>
+
+                <div class="column ">
+
+                        <div class="benefit">
+                            <h4>Why?</h4>
+                            <ul class="description">
+                              <li > Enable <strong>inexact matching</strong>  in the embedding space.</li>
+                              <li> Computational <strong>complexity</strong>.</li>
+                              <li><i>"Models that learn lower dimensional representations performs better than explicit counting-based models on different tasks—possibly due to better generalization across terms".</i> <cite>(Levy et al., 2015)</cite></li>
+                            </ul> 
+                         </div>  
+                 </div>
+                 
+              </div>
+
+
+              <div class="grid ms content-right"> 
+                
+        
+                  <div class="column ">
+                         <div class="benefit">
+                            <h4>Latent Semantic Analysis</h4>
+                            <ul class="description">
+                              <li>Performs <strong>singular value decomposition</strong>  on a term-document matrix X to obtain its low-rank approximation.</li>
+                            </ul> 
+                          </div>  
+                        <!-- 
+                             <figure>
+                             <img src="./static/images/lsa.png">
+                            </figure> -->
+                    </div>    
+    
+
+                <div class="column bg-gradient-v">
+                  <h2>Non Neural Learning of embeddings</h2>
+              </div>
+            </div>    
+        
+        <div class="grid sm"> 
+                <div class="column bg-red ">
+                    <h2>Neural Learning of embeddings</h2>
+
+                </div>
+
+                <div class="column">
+
+                <div class="benefit">
+                    
+                  <ul class="description">
+                    <li > Typically trained by setting up a prediction task, motivated by the <strong>information bottleneck</strong> principle.</li>
+                  </ul> 
+                 
+
+
+                  <ul class="flexblock activity">
+                    <li>
+                      <a href="#" title="">
+                        <div>
+                          <p class="year">
+                            Mikolov et al., 2013
+                          </p>
+                          <p class="title">
+                           <mark>Word2Vec</mark>: Efficient estimation of word representations in vector space
+                          </p>
+                          <p class="summary">
+                              One hidden layer neural network with both input & output modelled as one-hot vectors.
+                              The input(a term's features) is represented by the encoding of the term's neighbours within a fixed size window over the text. Goal is minimizing the error in predicting a term given one of its neighbours.(skip-gram flavour)
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="">
+                        <p class="year">
+                          T. Mikolov. 2014
+                        </p>
+                        <p class="title">
+                        <mark>Paragraph2Vec</mark>:Distributed Representations of Sentences and Documents
+                        </p>
+                        <p class="summary">
+                         Similat to Word2Vec but: trains on term-document co-occurrences(predicting a term given the ID of a document).The key motivation is to  learn an embedding that follows the topical notions of similarity
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="">
+                        <p class="year">
+                          Pennington, J., R. Socher, and C. D. Manning. 2014
+                        </p>
+                        <p class="title">
+                           <mark>Glove</mark>: Global vectors for word representation
+                        </p>
+                        <p class="summary">
+                         NN where training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space.
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+             </div>
+                 
+                <!-- 
+                 <div class="column">
+                            <figure>
+                             <img src="./static/images/bottle.png">
+                            </figure> 
+                </div> -->
+
+          </div>
+                      
+
+         </div> <!-- .end .wrap -->
+      
+      </section>
+
+
+    <!-- presentazione word2vec -->
+
+      <!--Quotes white  -->
+        <section class="slide-top">
+            <div class="wrap">
+            <h2 class="aligncenter "><strong>Term embeddings for IR</strong> </h2>
+            <p class="aligncenter "> Unsupervised term embeddings can be utilized in 2 main ways:</p>
+            <div class="grid ms ">
+            <div class="column ">
+                <h3>Query-document matching directly in the latent space</h3>
+                <div class="benefit">
+
+                  
+                    <figure class="aligncenter size-70">
+                         <img src="./static/images/ir3_transparent.png">
+                        </figure> 
+
+                <ul class="description">
+                    <li> Embedding based models often <b> perform poorly</b> when the retrieval is performed <b> over</b> the <b>full</b> document <b>collection</b>. For example, the model may know that a "passage" in text is about fruit, but it fails to realize that the passage is about banana</li>
+                </ul>
+              
+        
+                 <h4 class="aligncenter">Telescoping</h4>
+                     <ul class="description">
+                    <li> <strong class="text-label">IDEA:</strong> <b>Chain different IR models</b> where each successive model <b>re-ranks a smaller number of candidate documents</b></li>
+                    <li> <strong class="text-label">PRACTICE:</strong> Use the embedding based model to re-rank only a subset of the documents retrieved by a different IR model.</li>
+                </ul>
+        
+
+
+              </div>
+             </div>
+              <div class="column">
+                <h3>Query expansion</h3>
+                <div class="benefit">
+                    
+                  <ul class="description">
+                    <li > Use embeddings to find <i>good expansion candidates</i> from a global vocabulary, and then <i>retrieving documents using the expanded query</i>.</li>
+                  </ul> 
+
+                     <figure class="aligncenter size-70">
+                         <img src="./static/images/exp.png">
+                        </figure> 
+
+
+              </div>
+             </div>
+            
+            <!--end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section class="slide-top">
+        <div class="wrap">
+           <br> 
+          <h1 class="aligncenter "><strong>Learning to rank: a supervised tale </strong> </h1>
+           <br> 
+          <p class=" text-subtitle aligncenter "> LTR for IR uses <strong>relevance information</strong>, such as labels and click data as training data to improve
+          the pertinence of the ranking</p>  
+          <br> <br> <br><br> <br> <br>
+
+      
+              <ul class="flexblock blink">
+              <li>
+                  <h1 class="text-subtitle"> Rankable item </h1>
+                
+                  <p>Query-document pairs, represented by feature vectors  \( \bar{x} \) </p> 
+                  <p>  <b>Traditional models</b> use represented <b>hand-crafted features</b> like:</p>
+                  <ul class="">
+                    <li> - Query-independent or static features (e.g., query length/document length)  </li>
+                    <li> - Query-dependent or dynamic features (e.g., BM25)</li>
+                  </ul> 
+                  <br>
+                   <p> <b>Modern models</b> use <b>deep architecture</b> for feature learning, starting from a simple vector representations of the input.</p><p> Additional parameters, such as the document popularity, could be used in the process</p>
+
+              </li>
+
+              <li>
+                  <h1 class="text-subtitle"> Ranking model </h1>
+                  <p> Trained to <b>map the vector to a real-valued score</b> s.t.  for a given query the more relevant documents are scored higher and some chosen <b>rank-based metric is maximized</b></p>
+                  <p>Depending on the <b>input</b> several algorithm can be used: <b>NN</b>, <b>SVM</b>, <b>Trees </b>etc.</p>
+              </li>
+
+              <li>
+                  <h1 class="text-subtitle"> A LOSS function </h1>
+                  <p>Depending on the type of relevance (how it is encoded) can be calculated as:</p>
+                   <ul class="">
+                    <li> <p> - <b>Regression loss</b> when the relevance information is numerical; a standard loss function, such as the square loss, can be employed.</p> $$ L_{squared}=||True - Predicted||^2$$ </li>
+                    <li><p> - <b>Classification loss</b> when the relevance information are labels: the probability of the correct label for the query/document pair  \( \bar{x} \) can be obtained by the softmax function which  normalizes the score of the correct label against the set of all possible labels.</p>
+                    </li>
+                    
+                  </ul> 
+                  
+              </li>
+            </ul>
+          
+          <figure class="aligncenter size-20">
+                         <img src="./static/images/salad.png">
+                        </figure> 
+
+          </div>
+          
+       </section>
+
+
+
+       <section class="slide-top">
+        <div class="wrap">
+           <h1 class="aligncenter "> About the <strong>INPUT</strong>...  </h1>
+            <div class="grid sm ">
+                <div class="column ">
+          
+                         <figure class="aligncenter size-80">
+                         <img src="./static/images/nn.png">
+                        </figure> 
+
+                </div>
+                <div class="column">  
+                      <p class=" text-subtitle aligncenter ">Neural models that learn representations of text take raw text as input: </p>
+
+                <ul class="flexblock activity">
+                    <li>
+                      <a href="#" title="">
+                        <div>
+                       
+                          <p class="title">
+                           Character level: 
+                          </p>
+                          <p class="summary">
+                              Each character is typically represented by a one-hot vector. In this setting text can be derived by either aggregate or summing the char-level vector
+                             
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="">
+                       
+                        <p class="title">
+                        Term level:
+                        </p>
+                        <p class="summary">
+                         Each term is represented by either a sparse vector or using pre-trained term embeddings. Usually, term vectors can be derived by aggregating one-hot vectors of its constituting characters (or character n-graphs).
+                         Text is then derived from the concatenation/sum.
+                        </p>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+
+               <div class="grid">
+                  <div class="column"> 
+                    <p class=" text-subtitle aligncenter ">Character Level</p>
+                    <figure class=" size-70">
+                         <img src="./static/images/gog.png">
+                        </figure>
+                  </div>
+
+
+                 <div class="column"> 
+                    <p class=" text-subtitle aligncenter "> Bag-of-trigraphs per term</p>
+                    <figure class="aligncenter size-60">
+                         <img src="./static/images/gog1.png">
+                        </figure>
+                  </div>
+
+
+                  <div class="column"> 
+                    <p class=" text-subtitle aligncenter ">Term level with pretrained term embeddings</p>
+                    <figure class=" aligncenter size-60">
+                         <img src="./static/images/gog2.png">
+                        </figure>
+                  </div>
+
+               </div>
+
+
+          
+          </div>
+       </section>
+
+
+
+
+        <section class="slide-top">
+        <div class="wrap">
+           <h1 class="aligncenter "> About the <strong>MODEL</strong>...  </h1>
+          <div class="grid mm">
+            <div class="column">
+            
+
+            <div class="card bg-white"> <!-- START CARD -->
+          
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Autoencoders 
+                </h2>
+              
+
+                <p> Unsupervised learning model based on the information bottleneck method, the train consists in feeding in the high-dimensional vector inputs and trying to reconstruct the same representation at the output layer </p>
+               <p> In the process the parameters that encode & decode the input are adjusted to  minimize the squared loss (usually) between the reconstructed output and the input </p>  
+
+               <figure class="aligncenter size-80">
+                         <img src="./static/images/auto.png">
+               </figure>
+
+                <p class=" text-subtitle aligncenter ">Variational autoencoders </p>
+
+          <p> The encoder generates two separate vectors: means  \( \vec{\mu} \) and  deviations \( \vec{\sigma} \) (latent space is 2*z).</p>
+        
+        <p> The latent representation is generated by sampling a gaussian  along each of the k latent dimensions. </p>
+        
+        <p> By sampling the latent representation, we expose the decoder to a certain degree of local variations in its input that should force the model to learn a smoother continuous latent space. </p>
+        <p>An important application of VAE is for the synthesis of new items or text not observed in the training collection.</p>
+
+
+
+            </div> <!-- end .flex-content-->
+        </div> <!-- End card -->
+
+
+           
+
+
+
+      </div>
+
+          <div class="column">
+
+            <div class="card bg-white"> <!-- START CARD -->
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Siamese Network
+                </h2>
+
+               <figure class="aligncenter  size-40">
+                         <img src="./static/images/siamese.png">
+               </figure>
+
+                <p> The siamese network's architecture consists of 2 models  ( \( m1,m2 \)), that projects
+                2 inputs ( \( i1,i2 \)) to the same latent space, thus obtaining ( \( v1,v2 \)) </p>
+
+                <p> The distance(usually cosine similarity) is then computed and the parameters, which are shared, are optimized such that ( \( v1,v2 \)) are <i> closer</i> when when expected to be close & further otherwise. </p>
+
+                <p><i>For example, the features representing all the documents about “banana bread” should be very close to each other, but far away from feature clusters of all other documents.</i></p>
+
+                <p>The LOSS is usually the <b>triplet loss</b>: where a baseline vector \( \vec q \) (query) is compared against a positive(relevant) vector \( \vec p \) (e.g. document clicked by the user) and a negative vector \( \vec n \) (falsy document sampled with uniform probability from the full collection).   </p>
+            
+              </div> <!-- end .flex-content-->
+            </div> <!-- END CARD -->
+        
+
+          </div> <!-- END COL -->
+        
+        </div> <!-- END GRID -->
+
+
+
+      </div>
+  
+   </section>
+
+
+   <section class="slide-top">
+        <div class="wrap">
+            <div class="grid mm ">
+                <div class="column ">
+          
+                         <figure class="aligncenter size-80 ">
+                         <img src="./static/images/hash.png">
+                        </figure> 
+                          <figure class="aligncenter size-80 ">
+                         <img src="./static/images/rbm.png">
+                        </figure> 
+
+                </div>
+
+                 <div class="column ">
+                    <h2 class=" text-subtitle aligncenter "> A "deep" neural model for ad-hoc retrieval</h2>
+                    <p> <b>MODEL</b> is a deep autoencoder trained under unsupervised setting on unlabelled document collection </p>
+
+                    <p> <b>PREPROCESSING</b> consisted of removing common stopwords, stemming, and then only considering the 2000 most frequent words in the corpus (training set).</p>
+
+
+                    <p> <b>IMPLEMENTATION</b> map semantically similar documents to nearby addresses (in memory), allowing for a fast retrieval</p>
+
+
+                    <p> <b>INPUT</b>: is composed by word-count (of the 2000 words) of a document</p>
+
+
+                    <p> <b>INDEXING</b>: a document is mapped to a word-count vector and then this vector is passed through autoencoder and encoded to 32-bit address.</p>
+
+
+                    <p> <b>OUTPUT</b>: a learned binary code for the document which represents its matching address (in memory)
+
+
+
+                    <p> <b>RETRIEVAL</b>  makes use of TELESCOPING technique: the hashing is used to preselect the top x documents in the query address or in close addresses (up to 4 bits in hamming distance). The subset is then reranked via TF-IDF. <i>(sectio 4.3 of the paper)</i> </p>
+
+                    <p> <b>PROS: </b>Semantic hashing is independent of the size of the document collection n and linear in the size of the shortlist of similar documents. LSA search time, for example,  linearly depends on the size of the corpus.</p>
+
+
+                    <p> <b>RESULTS:</b> experiments proved that the use of semantic hashing as a filter for TF-IDF lead to a higher precision and recall than TF-IDF applied to the whole document, in a much faster time</p>
+                   
+
+                </div>
+            </div>
+
+          </div>  
+
+      </section>
+
+
+
+        
+        <section class="slide-top">
+        <div class="wrap">
+           
+          <div class="grid sm">
+            <div class="column">
+            
+
+            <div class="card bg-white"> <!-- START CARD -->
+          
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Interaction based network
+                </h2>
+    
+               <p class=" text-subtitle "> IDEA:</p>
+               <p> Compare different parts of the query with different parts of the document, then, aggregate these partial evidences of relevance </p> 
+
+               <p> This operation could be very usefull when dealing with long documents which may contain a mixture of many topics  </p>
+
+                <p class=" text-subtitle  ">Implementation:</p>
+
+                <p>A <i>sliding window</i> is moved over both the query and the document text and each instance of the window over  the query is compared against each instance of the window over the document text, generating an "interaction matrix"</p>
+
+                <p>A <i>neural model</i> (typically convolutional) operates over the generated interaction matrix and aggregates the evidence across all the pairs of windows compared, to find patterns of matches that suggest relevance of the document to the query</p>
+                  
+
+                  <figure class="aligncenter  ">
+                     <img src="./static/images/reten.png">
+                    </figure> 
+ 
+                </div> <!-- end .flex-content-->
+              </div> <!-- End card -->
+          </div>
+
+          <div class="column">
+
+            <div class="card bg-white"> <!-- START CARD -->
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Lexical & semantic matching
+                </h2>
+                 <p class=" text-subtitle  "> Context:</p>
+
+                 <p>Most of the applications of NN to IR are about finding good embeddings, that is, a good representation of text. These representation presents both advantages & disadvantages. </p>
+
+                 <p> Embedding based models often perform poorly on retrieval task of specific  terms like proper names of companies, places etc. (e.g. <i> Lee's sausage company</i>), since it is unlikely that the model would have  a good representation for such term. </p> 
+
+                 <p> On the other hand, a lexical based matches would not work when the system is asked something "implicit" like: "On which channel is the Ajax playing today"? 
+                 The target document will probably contains proper names of channels, like Rai 1 or Canale 5 but not the term "channel" per se. </p>
+
+                 <p><b>A duet architecure:</b> A <i>good neural IR model</i> should incorporate both <i>lexical</i> and <i>semantic </i>matching signals.</p>
+
+                 <div class="grid mm">
+
+                    <div class="column">
+                      <figure >
+                     <img src="./static/images/duet.png">
+            
+                    </figure> 
+                    </div>
+
+                    <div class="column align-rigth">
+                      <figure class="">
+                     <img src="./static/images/mitra.png">
+                    </figure> 
+                    </div>
+
+
+                 </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div> <!-- end .flex-content-->
+            </div> <!-- END CARD -->
+        
+
+          </div> <!-- END COL -->
+
+
+
+
+
+        
+        </div> <!-- END GRID -->
+
+
+
+      </div>
+  
+   </section>
+
+
+
+
+
+
+
+      <section class="slide-top">
+        <div class="wrap">
+       
+          <h1 class="aligncenter text-subtitle"><strong>Conclusions</strong> </h1>
+           
+            
+              <ul class="flexblock">
+                <li>
+                  <h1 class="aligncenter"> Desiderata of a model</h1>
+                 
+
+                  <p class=" aligncenter text-subtitle" > Of <strong>short</strong> and <strong>long</strong> text </p>
+                  <p>Retrieval of <b>long</b> text: a model must deal with <strong>variable length documents</strong> where the relevant sections (to the query) may be surrounded by (a lot of) irrelevant text. </p>                  <p>Retrieval of <b>short</b> text: a model must deal with <b>query-document vocabulary mismatch</b> problem, by learning how patterns of query terms and (different) document terms can indicate relevance.</p>
+
+                  <p> In either cases, a <b>model should</b> also <b>consider lexical matches</b> when the query contains <i>rare terms</i> (not seen during training) to avoid retrieving semantically related but irrelevant results.</p>  
+
+                  <p class=" aligncenter text-subtitle" > <strong>context</strong> </p>
+
+                  <p> Ideal IR models should be able to discriminate or rank between documents <b>inferring the meaning of a query from context.</b></p>
+
+                  <p> For example, if one searches for <i>"soccer world cup winner"</i>, it is highly probable that what he/she wants is the last edition's winner. And that should be  understood by the model via the context or the user’s short or long-term history.</p>
+
+                    <p class=" aligncenter text-subtitle" > The <strong>need</strong> of <strong>labelled data</strong> </p>
+                  <p>IR is “a little behind” wrt CV & NLP mostly because it suers heavily (and for good reasons) for lack of annotated (labelled) document collections, for privacy reasons. </p>
+
+
+                </li>
+
+
+
+                 <li>
+
+                   <h1 class="aligncenter">Present problems and future goals</h1>
+                  
+                  <br>
+                   <!--<p class=" aligncenter text-subtitle" > An though <strong>dilemma</strong> </p>-->  
+                  
+                  <blockquote class="">
+                        <p class="text-subtitle" >"Should the ideal IR model behave like a library
+                                                   that knows about everything in the Universe, or like a librarian who can effectively retrieve without memorizing the corpus"</p>
+                        <p><cite>Mitra (2018) </cite></p>
+                   </blockquote>
+                
+
+                 
+
+                  <p class=" aligncenter text-subtitle" > A <strong>brute force</strong> approach </p>
+                  <figure class="aligncenter size-70">
+                     <img src="./static/images/pile.png">
+                    </figure> 
+
+                </li>
+
+             
+
+                
+                
+              </ul>
+          
+         
+
+        </div>
+      </section>
+
+
+
+          <!--Saluti -->
+        
+         <!-- <section class="bg-apple aligncenter"> -->
+          <section class="bg-gradient-v aligncenter style=' background-image:url(./static/images/home-background.jpg')" >
+          <h2 class="text-emoji zoomIn">😎</h2>
+          <h3><strong>Thank you!</strong></h2>
+         </section>
+
+
+
+
+        <!--  **********************************************************************************************   -->
+       </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="./static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./static/js/svg-icons.js"></script>
+
+  </body>
+</html>
